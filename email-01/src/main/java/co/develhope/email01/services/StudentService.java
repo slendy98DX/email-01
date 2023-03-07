@@ -10,7 +10,6 @@ import java.util.Optional;
 @Service
 public class StudentService {
 
-
     /** Metto studenti finti dato che la repository viene esposta su GitHub **/
     static List<Student> students = Arrays.asList(
             new Student("1","Ciao","Pino","pino123@gmail.com"),

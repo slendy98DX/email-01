@@ -14,8 +14,6 @@ public class EmailService {
     public void sendTo(String email, String title, String text) {
         SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
         simpleMailMessage.setTo(email);
-        simpleMailMessage.setFrom("development@develhope.com");
-        simpleMailMessage.setReplyTo("development@develhope.com");
         simpleMailMessage.setSubject(title);
         simpleMailMessage.setText(text);
         emailSender.send(simpleMailMessage);
